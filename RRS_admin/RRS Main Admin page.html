@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.T.D Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+</head>
+
+<body class="admin">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark admin-navbar">
+        <a class="navbar-brand" href="#">Spot The Dine</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./RRS_admin/menu/menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../RRS_user/tablereservation.html">Reserve</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../RRS_user/feedback.html">Feedback</a>
+                </li>
+            </ul>
+            
+        </div>
+    </nav>
+        <div class="admin-dashboard">
+            <div class="sidebar">
+                <div class="admin-profile">
+                    <img src="../assets/images/STD_white.png" class="newadmin" alt="STD">
+                </div>
+                <h2></h2>
+                <nav aria-label="Admin navigation" class="admin-nav">
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Manage Reservations</a></li>
+                        <li><a href="./menu/form.html">Manage Menus</a></li>
+                        <li><a href="./manage_booking/admin.html">Manage Booking</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main-content">
+                <h1>Recent Reservations</h1>
+                <table class="table">
+                    <!-- Table Head -->
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>No. of Guests</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <!-- Table Body -->
+                    <tbody>
+                        <!-- Reservation Row -->
+                        <tr>
+                            <td>John Doe</td>
+                            <td>2023-12-20</td>
+                            <td>14:10</td>
+                            <td>2</td>
+                            <td>Confirmed</td>
+                        </tr>
+                        <tr>
+                            <td>Jane Smith</td>
+                            <td>2023-12-20</td>
+                            <td>13:50</td>
+                            <td>2</td>
+                            <td>Confirmed</td>
+                        </tr>
+                        <tr>
+                            <td>James Johnson</td>
+                            <td>2023-12-20</td>
+                            <td>13:20</td>
+                            <td>3</td>
+                            <td>Cancelled</td>
+                        </tr>
+                        <tr>
+                            <td>Jessica Williams</td>
+                            <td>2023-12-20</td>
+                            <td>13:00</td>
+                            <td>2</td>
+                            <td>Confirmed</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="row my-4">
+                    <!-- Total Reservations Card -->
+                    <div class="col-lg-4">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                            <div class="card-gradient-header" role="heading" aria-level="2">Total Reservations</div>
+                            <div class="card-gradient-body" role="text">
+                                <h5 class="card-title" aria-label="Total Reservations: 12">12</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cancelled Reservations Card -->
+                    <div class="col-lg-4">
+                        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                            <div class="card-gradient-header" role="heading" aria-level="2">Cancelled Reservations</div>
+                            <div class="card-gradient-body" role="text">
+                                <h5 class="card-title" aria-label="Cancelled Reservations: 2">2</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Average Guests per Reservation Card -->
+                    <div class="col-lg-4">
+                        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                            <div class="card-gradient-header" role="heading" aria-level="2">Average Guests per Reservation</div>
+                            <div class="card-gradient-body" role="text">
+                                <h5 class="card-title" aria-label="Average Guests per Reservation: 3">3</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Analytics Data -->
+                <h1>Analytics</h1>
+
+                <div class="row">
+                    <!-- Reservations Chart -->
+                    <div class="col-lg-6">
+                        <canvas id="reservationsChart"></canvas>
+                    </div>
+
+                    <!-- Status Chart -->
+                    <div class="col-lg-6">
+                        <canvas id="statusChart"></canvas>
+                    </div>
+                </div>
+
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <!-- Charts will be populated here -->
+            </div>
+        </div>
+    </section>
+    <footer aria-label="Website Footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>About Us</h2>
+                <p>Spot The Dine is not just a restaurant; it's a celebration of flavors and culinary craftsmanship.</p>
+            </div>
+
+            <div class="footer-section">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="./index.html">Home</a></li><br />
+                    <li><a href="./RRS_admin/menu/menu.html">Menu</a></li><br/>
+                    <li><a href="./RRS_admin/login/ad_login.html">Admin</a></li><br />
+                    <li><a href="#">Contact Us</a></li><br />
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2>Stay in Touch</h2>
+                <ul>
+                    <li><a href="#"><img src="../assets/images/facebook.png" alt="Facebook Link"></a></li>
+                    <li><a href="#"><img src="../assets/images/instagram.png" alt="Instagram Link"></a></li>
+                    <li><a href="#"><img src="../assets/images/twitter.png" alt="Twitter Link"></a></li>
+                </ul>
+
+                <form id="footer-form" method="post" action="subscribe">
+                    <label for="emailInput">Subscribe to our newsletter:</label>
+                    <input type="email" id="emailInput" name="email" aria-required="true" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <p>&copy; 2022 Spot The Dine. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../Resources/js/main.js"></script>
+
+</body>
+
+</html>

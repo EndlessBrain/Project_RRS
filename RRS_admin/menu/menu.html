@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="../../assets/styles/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Spot The Dine</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./MainPage.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./RRS_admin/menu/menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./RRS_user/tablereservation.html">Reserve</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./RRS_user/ind.html">Feedback</a>
+                </li>
+            </ul>
+            <div class="navbar-nav">
+                <button class="btn btn-sm btn-outline-secondary mr-2" type="button" onclick="location.href='../../RRS_user/login/login.html'">Login</button>
+                <button class="btn btn-sm btn-outline-secondary" type="button" onclick="location.href='../../RRS_user/login/signup.html'">Signup</button>
+            </div>
+        </div>
+    </nav>
+    <header class="menuclass">
+        <h1>Our Menu</h1>
+    </header>
+
+    <main class="menu">
+        <div id="menu-list" role="list">    
+        <div class="card menu-card">
+            <div class="card-content">
+                <img class="card-img" src="../../assets/images/SGT.png" alt="Gourmet Dosas image">
+                <h2 class="card-title">spicy Gourmet thali</h2>
+                <p class="price card-price">₹400</p>
+                <div class="quantity card-quantity">
+                    <label for="quantity-item1">Quantity:</label>
+                    <input type="number" id="quantity-item1" name="quantity-item1" value="1" min="1">
+                </div>
+                <button class="add-to-cart-btn card-button">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Item 1 -->
+<div class="card menu-card">
+    <div class="card-content">
+        <img class="card-img" src="../../assets/images/GD.png" alt="Gourmet Dosas image">
+        <h2 class="card-title">Gourmet Dosas</h2>
+        <p class="price card-price">₹180</p>
+        <div class="quantity card-quantity">
+            <label for="quantity-item1">Quantity:</label>
+            <input type="number" id="quantity-item1" name="quantity-item1" value="1" min="1">
+        </div>
+        <button class="add-to-cart-btn card-button">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Item 2 -->
+<div class="card menu-card">
+    <div class="card-content">
+        <img class="card-img" src="../../assets/images/GM.png" alt="Gourmet Meals image">
+        <h2 class="card-title">Gourmet Meals</h2>
+        <p class="price card-price">₹300</p>
+        <div class="quantity card-quantity">
+            <label for="quantity-item2">Quantity:</label>
+            <input type="number" id="quantity-item2" name="quantity-item2" value="1" min="1">
+        </div>
+        <button class="add-to-cart-btn card-button">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Item 3 -->
+<div class="card menu-card">
+    <div class="card-content">
+        <img class="card-img" src="../../assets/images/DM.png" alt="Dal Makhani with White Truffle image">
+        <h2 class="card-title">Dal Makhani</h2>
+        <p class="price card-price">₹250</p>
+        <div class="quantity card-quantity">
+            <label for="quantity-item3">Quantity:</label>
+            <input type="number" id="quantity-item3" name="quantity-item3" value="1" min="1">
+        </div>
+        <button class="add-to-cart-btn card-button">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Item 4 -->
+<div class="card menu-card">
+    <div class="card-content">
+        <img class="card-img" src="../../assets/images/AKWEM.png" alt="Awadhi Kebabs with Exotic Meats image">
+        <h2 class="card-title">Awadhi Kebabs with Exotic Meats</h2>
+        <p class="price card-price">₹400</p>
+        <div class="quantity card-quantity">
+            <label for="quantity-item4">Quantity:</label>
+            <input type="number" id="quantity-item4" name="quantity-item4" value="1" min="1">
+        </div>
+        <button class="add-to-cart-btn card-button">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Item 5 -->
+<div class="card menu-card">
+    <div class="card-content">
+        <img class="card-img" src="../../assets/images/MP.png" alt="Meat image">
+        <h2 class="card-title">Meat Pasanda</h2>
+        <p class="price card-price">₹450</p>
+        <div class="quantity card-quantity">
+            <label for="quantity-item5">Quantity:</label>
+            <input type="number" id="quantity-item5" name="quantity-item5" value="1" min="1">
+        </div>
+        <button class="add-to-cart-btn card-button">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Item 6 -->
+<div class="card menu-card">
+    <div class card-content">
+        <img class="card-img" src="../../assets/images/TN.png" alt="Truffle Naan image">
+        <h2 class="card-title">Truffle Naan</h2>
+        <p class="price card-price">₹150</p>
+        <div class="quantity card-quantity">
+            <label for="quantity-item6">Quantity:</label>
+            <input type="number" id="quantity-item6" name="quantity-item6" value="1" min="1">
+        </div>
+        <button class="add-to-cart-btn card-button">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Item 7 -->
+<div class="card menu-card">
+    <div class="card-content">
+        <img class="card-img" src="../../assets/images/AASM.png" alt="Almond and Saffron Milkshake image">
+        <h2 class="card-title">Almond and Saffron Milkshake</h2>
+        <p class="price card-price">₹150</p>
+        <div class="quantity card-quantity">
+            <label for="quantity-item7">Quantity:</label>
+            <input type="number" id="quantity-item7" name="quantity-item7" value="1" min="1">
+        </div>
+        <button class="add-to-cart-btn card-button">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Item 8 -->
+<div class="card menu-card">
+    <div class="card-content">
+        <img class="card-img" src="../../assets/images/DFM.png" alt="Dry Fruit Milkshake image">
+        <h2 class="card-title">Dry Fruit Milkshake</h2>
+        <p class="price card-price">₹280</p>
+        <div class="quantity card-quantity">
+            <label for="quantity-item8">Quantity:</label>
+            <input type="number" id="quantity-item8" name="quantity-item8" value="1" min="1">
+        </div>
+        <button class="add-to-cart-btn card-button">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Item 9 -->
+<div class="card menu-card">
+    <div class="card-content">
+        <img class="card-img" src="../../assets/images/IC.png" alt="Indian Special Chai image">
+        <h2 class="card-title">Indian Special Chai</h2>
+        <p class="price card-price">₹80</p>
+        <div class="quantity card-quantity">
+            <label for="quantity-item9">Quantity:</label>
+            <input type="number" id="quantity-item9" name="quantity-item9" value="1" min="1">
+        </div>
+        <button class="add-to-cart-btn card-button">Add to Cart</button>
+    </div>
+</div>
+        </div>
+    </main>
+
+    <footer aria-label="Website Footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>About Us</h2>
+                <p>Spot The Dine is not just a restaurant; it's a celebration of flavors and culinary craftsmanship.</p>
+            </div>
+
+            <div class="footer-section">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="../../RRS_user/tablereservation.html">Reserve a Table</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2>Stay in Touch</h2>
+                <ul>
+                    <li><a href="#"><img src="../../assets/images/facebook.png" alt="Facebook Link"></a></li>
+                    <li><a href="#"><img src="../../assets/images/instagram.png" alt="Instagram Link"></a></li>
+                    <li><a href="#"><img src="../../assets/images/twitter.png" alt="Twitter Link"></a></li>
+                </ul>
+
+                <form id="footer-form" method="post" action="subscribe">
+                    <label for="emailInput">Subscribe to our newsletter:</label>
+                    <input type="email" id="emailInput" name="email" aria-required="true" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <p>&copy; 2022 Spot The Dine. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../../Resources/js/main.js"></script>
+</body>
+
+</html>

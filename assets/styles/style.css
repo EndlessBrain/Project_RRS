@@ -1,0 +1,571 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Roboto font gives a modern, clean, high-end look */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;   /* Improves readability */
+    color: #333;    /* Dark grey favored by premium designs */
+    box-sizing: border-box;
+    background-color: #f5f5f5; /* Light grey background - softer on the eyes */
+  }
+  
+  /* typographic scale for a harmonious and balanced webpage */
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.75rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  /* Spacing around sections for an airy, open feel */
+  section {
+    padding: 3rem 1.5rem;
+  }
+  
+  /* Higher breadth container for main content */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .top-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background: url('../images/M_background_night.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  
+  .logo-container img {
+    max-width: 400px;
+    max-height: 400px;
+  }
+  .quote-container {
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quote {
+    font-size: 1.5em;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  .citation {
+    display: block;
+    text-align: right;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow .3s, transform .3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    transform: translate3d(0, -6px, 0);
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h2 {
+    margin-top: 0;
+  }
+  
+  .card-content p {
+    margin-bottom: 0;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 0.9em;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section h2 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+  }
+  
+  .footer-section p,
+  .footer-section ul {
+    margin-bottom: 15px;
+  }
+  
+  .footer-section ul li {
+    list-style-type: none;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #f0ad4e;
+  }
+  
+  .footer-section ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+  #footer-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #footer-form label {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  #footer-form input,
+  #footer-form button {
+    margin-top: 10px;
+  }
+  
+  .footer-container p {
+    text-align: center;
+    width: 100%;
+  }
+
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  #feedback-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #feedback-form label,
+  #feedback-form input,
+  #feedback-form textarea,
+  #feedback-form button {
+    width: 100%;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  #feedback-form input:focus,
+  #feedback-form textarea:focus {
+    transform: scale(1.02);
+    outline: none;
+    border-color: #f0ad4e;
+  }
+  
+  #feedback-form button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  #feedback-form button:hover {
+    background-color: #f0ad4e;
+  }
+  
+  .stars {
+    display: flex;
+    direction: rtl;
+    font-size: 2em;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  
+  .star {
+    cursor: pointer;
+  }
+  
+  .star:before {
+    content: '☆';
+  }
+  
+  .star:checked:before {
+    content: '★';
+    transition: all 0.3s ease;
+  }
+  
+  .star:hover:before,
+  .star:hover ~ .star:before {
+    content: '★';
+    transition: all 0.3s ease;
+  }
+  .stars {
+    direction: rtl;
+    display: inline-flex;
+  }
+  
+  input.star { 
+    display: none; 
+  }
+  
+  label.star {
+    font-size: 2em;
+    width: 1.5em;
+    cursor: pointer;
+  }
+  
+  label.star:before { 
+    content: '☆'; 
+    position: relative;
+  }
+  
+  input.star:checked ~ label.star:before, 
+  input.star + label.star:hover ~ label.star:before,
+  input.star + label.star:hover:before {
+    content: '★'; 
+  }
+
+  /* Login Page Styles */
+
+.ftco-section {
+    padding: 27%;
+  }
+  
+  .login-wrap {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.1);
+    max-width: 400px; 
+    margin: 0 auto; 
+  }
+  
+  .img {
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+  }
+  
+  .login-form {
+    padding: 30px;
+    max-width: 100%; 
+  }
+  
+  .login-form .form-group {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  .login-form .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 25px;
+    padding: 15px;
+    padding-left: 50px;
+  }
+  
+  .login-form .icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: #868e96;
+  }
+  
+  .login-form .btn-primary {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.7s;
+  }
+  
+  .login-form .btn-primary:hover {
+    background-color: #cc3700;
+  }
+  
+  .text-center {
+    padding-left: 10%;
+    padding-bottom: 5%;
+    color: #343a40;
+  }
+  
+  .text-center a {
+    color: #ff4500;
+    text-decoration: none;
+    transition: color 0.7s;
+  }
+  
+  .text-center a:hover {
+    color: #cc3700;
+  }
+  
+  .text-center p {
+    margin-bottom: 0;
+  }
+  
+  .heading-section h2 {
+    font-size: 36px;
+    color: #343a40;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .login-wrap {
+      margin-top: 50px;
+    }
+  }
+
+  .admin-profile {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.newadmin {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #2f3640;
+    color: #f5f6fa;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: #f5f6fa;
+    margin-bottom: 30px;
+}
+
+.admin-nav {
+    width: 100%;
+}
+
+.admin-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.admin-nav ul li {
+    line-height: 50px;
+    font-size: 1.2em;
+}
+
+.admin-nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: block;
+    padding-left: 25px;
+    border-left: 4px solid transparent;
+}
+
+.admin-nav ul li a:hover {
+    padding-left: 25px;
+    border-left: 4px solid #3498db;
+    background-color: #273c75;
+    color: #3498db;
+    transition: all 0.5s ease;
+}
+body.admin {
+    padding-left: 250px; 
+}
+
+.admin-navbar {
+    width: calc(100%-250px); 
+}
+/**************/
+header.menuclass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #252525;
+    height: 60px;
+    color: #fff;
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+.card-container {
+    margin: 0 -15px;
+}
+
+.menu-card {
+    width: 30%;
+    margin: 0 15px 15px 15px;
+}
+
+.card {
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title {
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-price {
+    font-size: 18px;
+    color: #e44d26; /* Adjust color to your preference */
+}
+
+.quantity {
+    margin-top: 10px;
+}
+
+.quantity label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.card-quantity input {
+    width: 60px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.card-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    color: #fff;
+    background-color: #333; /* Adjust color to your preference */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.card-button:hover {
+    background-color: #333; /* Adjust color to your preference */
+}
+
+#submit-dish-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#submit-dish-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+#submit-dish-form input[type='text'] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+#submit-dish-form button[type='submit'] {
+    padding: 10px 20px;
+    background-color: #252525;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit-dish-form button[type='submit']:hover {
+    background-color: #0056b3;
+}
